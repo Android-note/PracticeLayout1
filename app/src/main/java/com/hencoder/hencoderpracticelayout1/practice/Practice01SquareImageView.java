@@ -39,6 +39,7 @@ public class Practice01SquareImageView extends android.support.v7.widget.AppComp
             height = width;
         }
 
-        setMeasuredDimension(width, height);
+        setMeasuredDimension(resolveSize(width, widthMeasureSpec),
+                resolveSize(height, heightMeasureSpec));
     }
 }
